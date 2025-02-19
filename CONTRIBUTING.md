@@ -15,7 +15,6 @@ Thank you for your interest in contributing to **Codelabz**! This document will 
   - [Using Docker-Compose (Optional)](#using-docker-compose-optional)
 - [Firebase Setup](#firebase-setup)
   - [Firebase Web App Configuration](#firebase-web-app-configuration)
-  - [Firebase Functions & Service Account](#firebase-functions--service-account)
 - [Firebase Emulator Setup](#firebase-emulator-setup)
 - [Running the Project](#running-the-project)
   - [Development Server](#development-server)
@@ -215,8 +214,11 @@ macOS Users: Port 5000 can sometimes be used by macOS for AirPlay or other syste
 ```
 
 If you failed to run the project do the following steps :
-
-
+1. delete node modules
+2. delete package-lock.json
+3. re run `npm install `
+4. If error still exists add `SKIP_PREFLIGHT_CHECK=true` in your .env file
+ 
 - **Node Version:**  
   Always use Node.js version 14. If using `nvm`, switch with:
   ```bash
